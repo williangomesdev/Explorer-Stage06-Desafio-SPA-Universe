@@ -6,6 +6,7 @@
   outline: none;
   text-decoration: none;
   font-family: "Roboto", sans-serif;
+  list-style: none;
   transition: all 0.2s ease;
 }
 
@@ -24,7 +25,6 @@ html {
 body {
   font-size: 1.6rem;
   height: 100vh;
-  background-image: url("../images/mainBackground.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -50,7 +50,6 @@ header .logo {
 header nav ul {
   display: flex;
   gap: 5.3rem;
-  list-style: none;
 }
 
 header nav ul li a {
@@ -66,10 +65,21 @@ header nav ul li a:hover {
   font-weight: 700;
 }
 
-#app {
+body.home {
+  background-image: url(../images/mainBackground.svg);
+}
+
+#app .home {
   position: absolute;
   top: 29.4rem;
   left: 44rem;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 125%;
+  color: var(--fc-title-content);
 }
 
 .home {
@@ -78,13 +88,6 @@ header nav ul li a:hover {
   align-items: center;
   justify-content: center;
   gap: 2.4rem;
-}
-
-.home h1 {
-  font-weight: 700;
-  font-size: 4.8rem;
-  line-height: 125%;
-  color: var(--fc-title-content);
 }
 
 .home button {
@@ -97,11 +100,35 @@ header nav ul li a:hover {
   line-height: 2.4rem;
   border: 2px solid var(--fc-white);
   border-radius: 0.5rem;
- 
 }
 
 .home button:hover {
   cursor: pointer;
   background: var(--fc-white);
   color: var(--light-green);
+}
+
+body.universe {
+  background-image: url(../images/universeBackground.svg);
+}
+
+#app .universe {
+  position: absolute;
+  top: 18.5rem;
+  left: 10.2rem;
+}
+
+.universe {
+  max-width: 64.8rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.universe p {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 160%;
+  color: var(--fc-title-content);
 }
