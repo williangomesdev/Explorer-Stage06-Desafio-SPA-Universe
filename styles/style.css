@@ -43,10 +43,6 @@ header nav {
   gap: 4.3rem;
 }
 
-header .logo {
-  cursor: pointer;
-}
-
 header nav ul {
   display: flex;
   gap: 5.3rem;
@@ -59,14 +55,15 @@ header nav ul li a {
   font-weight: 400;
 }
 
-header nav ul li a:hover {
+header nav ul li a:hover,
+header nav ul li a.active {
   cursor: pointer;
   color: var(--fc-white);
   font-weight: 700;
 }
 
 body.home {
-  background-image: url(../images/mainBackground.svg);
+  background-image: url(../images/home.png);
 }
 
 #app .home {
@@ -109,7 +106,7 @@ body.home {
 }
 
 body.universe {
-  background-image: url(../images/universeBackground.svg);
+  background-image: url(../images/universe.png);
 }
 
 #app .universe,
@@ -137,5 +134,5 @@ body.universe {
 }
 
 body.explorer {
-  background-image: url(../images/explorerBackground.svg);
+  background-image: url(../images/explorer.png);
 }

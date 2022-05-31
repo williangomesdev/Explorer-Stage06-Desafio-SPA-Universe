@@ -16,15 +16,19 @@
   <body class="home">
     <header>
       <nav>
-        <li>
-          <a onclick="route()" href="/" class="logo"
-            ><img src="./images/icon.svg" alt="""></a
-          >
-        </li>
+        <li><img src="./images/icon.svg" alt="ícone spa universe" /></li>
         <ul>
-          <li><a onclick="route()" href="/">Home</a></li>
-          <li><a onclick="route()" href="/universe">Universo</a></li>
-          <li><a onclick="route()" href="/explorer">Exploração</a></li>
+          <li>
+            <a class="active" id="homeLink" onclick="route()" href="/">Home</a>
+          </li>
+          <li>
+            <a id="universeLink" onclick="route()" href="/universe">Universo</a>
+          </li>
+          <li>
+            <a id="explorerLink" onclick="route()" href="/explorer"
+              >Exploração</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
