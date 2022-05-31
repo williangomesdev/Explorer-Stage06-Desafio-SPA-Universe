@@ -1,8 +1,10 @@
-const app = document.querySelector("#app");
-const body = document.querySelector("body");
-const homeLink = document.querySelector("#homeLink");
-const universeLink = document.querySelector("#universeLink");
-const explorerLink = document.querySelector("#explorerLink");
+import {
+  app,
+  body,
+  homeLink,
+  explorerLink,
+  universeLink,
+} from "./htmlElements.js";
 
 homeLink.addEventListener("click", () => {
   homeLink.classList.toggle("active");
