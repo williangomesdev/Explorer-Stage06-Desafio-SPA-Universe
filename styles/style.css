@@ -112,13 +112,15 @@ body.universe {
   background-image: url(../images/universeBackground.svg);
 }
 
-#app .universe {
+#app .universe,
+#app .explorer {
   position: absolute;
   top: 18.5rem;
   left: 10.2rem;
 }
 
-.universe {
+.universe,
+.explorer {
   max-width: 64.8rem;
   text-align: left;
   display: flex;
@@ -126,9 +128,14 @@ body.universe {
   gap: 1.6rem;
 }
 
-.universe p {
+.universe p,
+.explorer p {
   font-weight: 400;
   font-size: 1.8rem;
   line-height: 160%;
   color: var(--fc-title-content);
+}
+
+body.explorer {
+  background-image: url(../images/explorerBackground.svg);
 }
