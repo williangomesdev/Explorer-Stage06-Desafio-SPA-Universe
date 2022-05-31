@@ -6,10 +6,102 @@
   outline: none;
   text-decoration: none;
   font-family: "Roboto", sans-serif;
+  transition: all 0.2s ease;
 }
 
 :root {
-  --fc-white: #ffffff;
-  --fc-gray: #c4c4cc;
-  --light-green: #02799d;
+  --hue: 240;
+  --fc-white: hsl(0, 0%, 100%);
+  --fc-gray: hsl(var(--hue), 7%, 78%);
+  --fc-title-content: hsl(var(--hue), 9%, 89%);
+  --light-green: hsl(194, 98%, 31%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  height: 100vh;
+  background-image: url("../images/mainBackground.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  padding: 4rem 7.2rem;
+  gap: 4.3rem;
+}
+
+header .logo {
+  cursor: pointer;
+}
+
+header nav ul {
+  display: flex;
+  gap: 5.3rem;
+  list-style: none;
+}
+
+header nav ul li a {
+  font-size: 2.1rem;
+  line-height: 2.2rem;
+  color: var(--fc-gray);
+  font-weight: 400;
+}
+
+header nav ul li a:hover {
+  cursor: pointer;
+  color: var(--fc-white);
+  font-weight: 700;
+}
+
+#app {
+  position: absolute;
+  top: 29.4rem;
+  left: 44rem;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+}
+
+.home h1 {
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 125%;
+  color: var(--fc-title-content);
+}
+
+.home button {
+  padding: 1.2rem 3.2rem;
+  background: transparent;
+  text-transform: uppercase;
+  color: var(--fc-white);
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  border: 2px solid var(--fc-white);
+  border-radius: 0.5rem;
+ 
+}
+
+.home button:hover {
+  cursor: pointer;
+  background: var(--fc-white);
+  color: var(--light-green);
 }
