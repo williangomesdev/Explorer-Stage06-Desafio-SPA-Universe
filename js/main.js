@@ -1,35 +1,17 @@
 import Events from "./events.js";
-import { app } from "./htmlElements.js";
 
+import { Router } from "./routes.js";
 
+//Importando eventos
 Events();
 
 //rotas
-//retirar padrão dos links
-function route(event) {
-  event = event || window.event;
-  event.preventDefault();
-  window.history.pushState({}, "", event.target.href);
-  handle();
-}
+const router = new Router();
+router.addRoutes("/", "/pages/home.html");
+router.addRoutes("/universe", "/pages/universe.html");
+router.addRoutes("/explorer", "/pages/explorer.html");
 
-const routes = {
-  "/": "/pages/home.html",
-  "/universe": "/pages/universe.html",
-  "/explorer": "/pages/explorer.html",
-};
 
-function handle() {
-  const { pathname } = window.location;
-  const route = routes[pathname] || routes["/"];
-
-  fetch(route)
-    .then((data) => data.text())
-    .then((html) => {
-      app.innerHTML = html;
-    });
-}
-
-handle();
-window.onpopstate = () => handle();
-window.route = () => route();
+router.handle();
+window.onpopstate = () => router.handle();
+window.route = () => router.route();
