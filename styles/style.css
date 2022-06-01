@@ -63,13 +63,14 @@ header nav ul li a.active {
 }
 
 body.home {
-  background-image: url(../images/home.png);
+  background-image: url(../assets/images/home.png);
 }
 
 #app .home {
   position: absolute;
-  top: 29.4rem;
-  left: 44rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .title {
@@ -106,7 +107,7 @@ body.home {
 }
 
 body.universe {
-  background-image: url(../images/universe.png);
+  background-image: url(../assets/images/universe.png);
 }
 
 #app .universe,
@@ -134,6 +135,6 @@ body.universe {
 }
 
 body.explorer {
-  background-image: url(../images/explorer.png);
+  background-image: url(../assets/images/explorer.png);
 }
 
