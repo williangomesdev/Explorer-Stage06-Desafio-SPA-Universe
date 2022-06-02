@@ -1,0 +1,13 @@
+{
+  "name": "SPA_UNIVERSE",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts":{
+    "start":"lite-server"
+  },
+  "author": "<willianamaroti@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
