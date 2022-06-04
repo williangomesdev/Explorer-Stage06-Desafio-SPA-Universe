@@ -29,7 +29,7 @@ Projeto simples com propósito de demostrar conceitos de Single page application
 
 ## Demonstração
 <p align="center">
-<img src="./assets/github/focustimer2.0darkmode.gif">
+<img src="./assets/github/demonstration.gif">
 </p>
 
 ## Tecnologias

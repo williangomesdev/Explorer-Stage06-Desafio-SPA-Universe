@@ -2,8 +2,8 @@
   "name": "SPA_UNIVERSE",
   "version": "1.0.0",
   "main": "main.js",
-  "scripts":{
-    "start":"lite-server"
+  "scripts": {
+    "start": "lite-server"
   },
   "author": "<willianamaroti@gmail.com>",
   "license": "MIT",
