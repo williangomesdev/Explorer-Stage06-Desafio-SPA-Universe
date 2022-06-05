@@ -7,9 +7,9 @@ Events();
 
 //rotas
 const router = new Router();
-router.addRoutes("/", "/pages/home.html");
-router.addRoutes("/universe", "/pages/universe.html");
-router.addRoutes("/explorer", "/pages/explorer.html");
+router.addRoutes("./", "/pages/home.html");
+router.addRoutes("./universe", "/pages/universe.html");
+router.addRoutes("./explorer", "/pages/explorer.html");
 
 
 router.handle();
