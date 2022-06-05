@@ -6,7 +6,6 @@
 	Projeto desenvolvido na  formação explorer da rocketseat
 </h3>&nbsp;
 
-
 <h4 align="center">
 	Status: 🚀 Finalizado
 </h4>
@@ -19,27 +18,46 @@
 </p>
 
 ## Sobre
+
 Projeto simples com propósito de demostrar conceitos de Single page application (SPA)
 
 ## Funcionalidades
 
 [x] Transição de conteúdo de páginas, usando rotas
 
-[x] Alteração do conteúdo de forma dinâmica, mantendo o restante da pagina. 
+[x] Alteração do conteúdo de forma dinâmica, mantendo o restante da pagina.
 
 ## Demonstração
+
 <p align="center">
 <img src="./assets/github/demonstration.gif">
 </p>
 
+## Instalação da Demonstração
+
+Clonar o repositório
+
+```bash
+git clone git@github.com:williangomesdev/Explorer-Stage06-Desafio-SPA-Universe.git
+```
+Acesse o diretório do projeto e instale as dependências
+```bash
+  cd Explorer-Stage06-Desafio-SPA-Universe/
+  yarn install
+```
+Iniciar o servidor 
+```bash
+yarn run start
+```
+
 ## Tecnologias
 
-<img src="https://img.shields.io/badge/Css3-05122A?style=flat&logo=css3" alt="css3 Badge" height="25">&nbsp;
-<img src="https://img.shields.io/badge/Html5-05122A?style=flat&logo=html5" alt="html5 Badge" height="25">&nbsp;
-<img src="https://img.shields.io/badge/Javascript-05122A?style=flat&logo=javascript" alt="javascript Badge" height="25">&nbsp;
-
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="css3 Badge" height="25">&nbsp;
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="html5 Badge" height="25">&nbsp;
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="javascript Badge" height="25">&nbsp;
 
 ## Autor
+
 Criado por [Willian Amaro Gomes](https://github.com/williangomesdev)
 
 <a href="mailto:willianamaroti@gmail.com" target="_blank"><img src="https://img.shields.io/badge/willianamaroti@gmail.com-D14836?style=flat&logo=gmail&logoColor=white" alt="Email Badge" height="25"></a>&nbsp;
